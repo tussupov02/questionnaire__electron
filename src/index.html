@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Добавить товар</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__title">
+        <p>Добавить товар</p>
+      </div>
+      <div class="header__link">
+        <p class="header__links">
+          <a href="" class="header__home"><img src="../assets/home.png" alt=""></a> /
+          <a href="" class="header__main">Главная</a>/
+          <a href="" class="header__admin">Админ</a>
+        </p>
+        <img class="arrow__left" src="../assets/arrowLeft.png" alt="">
+      </div>
+    </header>
+    <nav class="questionnaire">
+      <div class="questionnaire__title">
+        <p>Анкета залогодателя</p>
+        <button><img src="../assets/arrow.png" alt=""></button>
+      </div>
+      <div class="questionnaire__content">
+        <div class="questionnaire__search">
+          <div class="input__search">
+            <input type="number" placeholder="введите ИИН для поиска в базе">
+            <button><img class="search__img" src="../assets/search.png" alt=""></button>
+          </div>
+        </div>
+        <div class="questionnaire__box">
+          <div class="questionnaire__search__title">
+            Данные о клиенте
+          </div>
+          <div class="questionnaire__user">
+            <div class="questionnaire__user__iin">
+              <p>ИИН</p>
+              <input type="number">
+            </div>
+            <div class="questionnaire__user__name">
+              <p>ФИО:</p>
+              <input type="text" placeholder="Иванов Иван Иванович">
+            </div>
+            <div class="questionnaire__user__pasport">
+              <div class="questionnaire__user__p">
+                <p>Номер уд/поспорт </p>
+                <span style="color: red; font-weight: 600;">*</span>
+              </div>
+              <input type="number" placeholder="0123456789">
+            </div>
+          </div>
+          <div class="questionnaire__date">
+            <div class="questionnaire__date__box">
+              <p>Дата выдачи уд/паспорт:</p>
+              <input type="date" >
+            </div>
+            <div class="questionnaire__date__box">
+              <p>Кем выдан уд/паспорт</p>
+              <select name="" id="">
+                <option value="">МВД РК</option>
+              </select>
+            </div>
+            <div class="questionnaire__date__box">
+              <p>Дата рождения</p>
+              <input type="date">
+            </div>
+            <div class="questionnaire__date__box">
+              <p>Телефон</p>
+              <input type="number" name="phone_number" list="tel-list" placeholder="+7(777)777-77-77" >
+            </div>
+            <div class="questionnaire__date__box">
+              <p>Улица</p>
+              <input type="text" placeholder="г. Нур-Султан ул. Абая 8">
+            </div>
+            <div class="questionnaire__date__box">
+              <p>Дом</p>
+              <input type="number" placeholder="д.8">
+            </div>
+            <div class="questionnaire__date__box">
+              <p>Квартира</p>
+              <input type="number" placeholder="кв.8">
+            </div>
+            <div class="questionnaire__date__box">
+              <p>EMAIL</p>
+              <input type="email" placeholder="comission@aktiv.kz">
+            </div>
+          </div>
+          <div class="product__data__main">
+            <div class="product__data__title">Данные о товаре</div>
+            <div class="product__data__components">
+              <div class="product__data__colum__one">
+                <div class="product__data__colum__state">
+                  <p>Состояние</p>
+                  <select name="" id="">
+                    <option value="">б/у</option>
+                  </select>
+                </div>
+                <div class="product__data__colum__type">
+                  <p>Тип товара</p>
+                  <select name="" id="">
+                    <option value="">Сотовый телефон</option>
+                  </select>
+                </div>
+                <div class="product__data__colum__category">
+                  <p>Категория
+                    <span style="color: red; font-weight: 600;">*</span>
+                  </p>
+                  <input type="text" placeholder="">
+                </div>
+                <div class="product__data__colum__model">
+                  <p>Модель
+                    <span style="color: red; font-weight: 600;">*</span>
+                  </p>
+                  <input type="text" placeholder="">
+                </div>
+              </div>
+              <div class="product__data__colum__two">
+                <div class="product__data__colum__memory">
+                    <p>Обем памяти</p>
+                  <select name="" id="">
+                    <option value="">Выберите память</option>
+                  </select>
+                </div>
+                <div class="product__data__colum__packaging">
+                  <p>Наличие упаковки</p>
+                  <select name="" id="">
+                    <option value="">Оригинальная коробка</option>
+                  </select>
+                </div>
+                <div class="product__data__colum__sn">
+                  <p>Серийный номер*S/N
+                    <span style="color: red; font-weight: 600;">*</span>
+                  </p>
+                  <input type="text" placeholder="__-_-___">
+                </div>
+                <div class="product__data__colum__imei">
+                  <p>IMEI</p>
+                  <div class="product__data__colum__imei__box">
+                    <input type="number" placeholder="XXXXXXXXXXXXXXX">
+                    <div>0</div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__data__state data">
+                <p>Общее состояние</p>
+                <input type="text">
+              </div>
+              <div class="product__data__packaging data">
+                <p>Комплектация</p>
+                <input type="text">
+              </div>
+              <div class="product__data__additional data">
+                <p>Дополнительное описание, характеристика золога
+                  <span style="color: red; font-weight: 600;">*</span>
+                </p>
+                <textarea placeholder="Описание залога (Без наушников, есть следы вскрытия и т.д)"></textarea>
+              </div>
+              <div class="product__data__colum__three">
+                <div class="product__data__bail__ticket">
+                  <p>Срок залога</p>
+                  <select name="" id="">Выберите количество дней</select>
+                </div>
+                <div class="">
+                  <p>Сумма выдачи</p>
+                  <input type="number" placeholder="в тг">
+                </div>
+                <div class="">
+                  <p>Сумма оценки</p>
+                  <input type="number" placeholder="в тг">
+                </div>
+                <div class="">
+                  <p>0,5 %</p>
+                  <input type="number" placeholder="0 тг">
+                </div>
+                <div class="check__main">
+                  <div class="check__box">
+                    <div class="square__green"></div>
+                    <p>Данные верны, все проверил(а)!</p>
+                  </div>
+                  <div class="check__box">
+                    <div class="square__red"></div>
+                    <p>Смс подтверждение не нужно</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="save">
+      <button class="save__button">Сохранить</button>
+    </nav>
+  </body>
+</html>
